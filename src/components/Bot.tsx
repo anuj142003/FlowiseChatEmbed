@@ -187,7 +187,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
 
   const [userInput, setUserInput] = createSignal('');
   const [loading, setLoading] = createSignal(false);
-  const [sourcePopupOpen, setSourcePopupOpen] = createSignal(false);
+  const [sourcePopupOpen, setSourcePopupOpen] = createSignal(true);
   const [sourcePopupSrc, setSourcePopupSrc] = createSignal({});
   const [messages, setMessages] = createSignal<MessageType[]>(
     [
